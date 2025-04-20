@@ -60,3 +60,12 @@ function write(id, text) {
     write('out5', res);
   });
   
+  // 6) Média de 7 notas
+  document.getElementById('btn6').addEventListener('click', () => {
+    let notas = [7,5,9,6,8,4,10];
+    let soma = notas.reduce((x,y) => x + y, 0);
+    let m = soma / notas.length;
+    let out = `Média: ${m.toFixed(2)} → ${m >= 6 ? 'Aprovado' : 'Reprovado'}`;
+    console.log(out);      
+    write('out6', out);
+  });
