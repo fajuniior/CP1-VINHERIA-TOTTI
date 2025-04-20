@@ -69,6 +69,7 @@ function write(id, text) {
     console.log(out);      
     write('out6', out);
   });
+
   // 7) Dados pessoais
   document.getElementById('btn7').addEventListener('click', () => {
     let nome = 'Vinicius Belotti', idade = 19;
@@ -77,3 +78,17 @@ function write(id, text) {
     console.log(out);      
     write('out7', out);
   });
+
+  // 8) Busca de strings
+  document.getElementById('btn8').addEventListener('click', () => {
+    let txt = 'Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas.';
+    let out = [
+      `primeiro “em”:     ${txt.indexOf('em')}`,
+      `último “ia”:       ${txt.lastIndexOf('ia')}`,
+      `posição “ciência”: ${txt.indexOf('ciência')}`,
+      `posição “métodos”: ${txt.indexOf('métodos')}`
+    ].join('\n');
+    console.log(out);
+    write('out8', out);
+  });
+  
