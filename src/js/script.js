@@ -29,3 +29,9 @@ switch (true) {
         faixa = "Acima do peso";
 }
 console.log("IMC:", imc.toFixed(2), "-", faixa);
+
+
+// 4 - Repetição até 50
+for (let i = 1; i <= 50; i++) {
+    console.log("O valor é:", i);
+}
