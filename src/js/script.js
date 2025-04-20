@@ -69,3 +69,11 @@ function write(id, text) {
     console.log(out);      
     write('out6', out);
   });
+  // 7) Dados pessoais
+  document.getElementById('btn7').addEventListener('click', () => {
+    let nome = 'Vinicius Belotti', idade = 19;
+    let curso = 'Engenharia de Software', ano = 2025;
+    let out = Nome: ${nome}\nIdade: ${idade}\nCurso: ${curso}\nAno: ${ano};
+    console.log(out);      
+    write('out7', out);
+  });
