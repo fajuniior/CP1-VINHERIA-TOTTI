@@ -92,3 +92,10 @@ function write(id, text) {
     write('out8', out);
   });
   
+    // 9) String → float
+    document.getElementById('btn9').addEventListener('click', () => {
+      let s = '123.45', f = parseFloat(s);
+      let out = antes: ${typeof s}\ndepois: ${typeof f};
+      console.log(out);
+      write('out9', out);
+    });
