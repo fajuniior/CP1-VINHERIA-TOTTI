@@ -2,11 +2,185 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>CP1- WEB/DEV</title>
+  <title>CP1 WEB‑DEV – Vinharia Totti</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #efe2cf;        /* tom bege claro */
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #5c1010; /* marrom escuro */
+      margin-bottom: 30px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #5c1010; /* borda marrom */
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      color: #5c1010;
+      font-size: 1.2em;
+      border-bottom: 1px solid #5c1010;
+      padding-bottom: 5px;
+    }
+    .card p {
+      flex: 1;
+      color: #333;
+      font-size: 0.95em;
+      line-height: 1.4;
+    }
+    .card button {
+      background: #5c1010;      /* marrom forte */
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-size: 1em;
+    }
+    .card button:hover {
+      background: #3e0808;      /* hover ainda mais escuro */
+    }
+    .output {
+      background: #f9f3e7;
+      border-radius: 4px;
+      padding: 10px;
+      margin-top: 10px;
+      white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 0.9em;
+      min-height: 40px;
+      color: #333;
+    }
+  </style>
 </head>
-<body style="background-color: #f5f5dc;">
-  <h1>Vinheria Totti</h1>
-  <div id="info"></div>
+<body>
+  <h1>Vinharia Totti – CP1 WEB/DEV</h1>
+  <div class="container">
+    
+    <!-- Questão 1 -->
+    <div class="card">
+      <h2>Questão 1</h2>
+      <p>
+        1 – Como declarar uma variável com valor undefined, vazio e com valor em JavaScript?  
+        Exemplifique e demonstre a saída do valor da variável!
+      </p>
+      <button id="btn1">Executar</button>
+      <div class="output" id="out1"></div>
+    </div>
+    
+    <!-- Questão 2 -->
+    <div class="card">
+      <h2>Questão 2</h2>
+      <p>
+        2 – Como usar os operadores !=, == e >= em JavaScript?  
+        Exemplifique e demonstre a saída!
+      </p>
+      <button id="btn2">Executar</button>
+      <div class="output" id="out2"></div>
+    </div>
+    
+    <!-- Questão 3 -->
+    <div class="card">
+      <h2>Questão 3</h2>
+      <p>
+        3 – Escreva um programa (usando switch case) que calcula o índice de massa  
+        corporal (IMC) de uma pessoa e exibe uma mensagem indicando se ela está  
+        abaixo, no peso ideal ou acima do peso. Considere as faixas: abaixo de 18,5,  
+        entre 18,5 e 24,9 e acima de 24,9. Exemplifique e demonstre a saída!
+      </p>
+      <button id="btn3">Executar</button>
+      <div class="output" id="out3"></div>
+    </div>
+    
+    <!-- Questão 4 -->
+    <div class="card">
+      <h2>Questão 4</h2>
+      <p>
+        4 – Faça um programa que faça uma repetição até 50 (usando for),  
+        apresentando no console “O valor é: <i>n</i>”!
+      </p>
+      <button id="btn4">Executar</button>
+      <div class="output" id="out4"></div>
+    </div>
+    
+    <!-- Questão 5 -->
+    <div class="card">
+      <h2>Questão 5</h2>
+      <p>
+        5 – Crie um programa que receba um nome de usuário e uma senha e verifique  
+        se correspondem a um usuário cadastrado (“admin” / “1234”).  
+        Exiba mensagem de sucesso ou falha de autenticação.
+      </p>
+      <button id="btn5">Executar</button>
+      <div class="output" id="out5"></div>
+    </div>
+    
+    <!-- Questão 6 -->
+    <div class="card">
+      <h2>Questão 6</h2>
+      <p>
+        6 – Vamos criar um programa que calcule a média de 7 notas e exiba uma mensagem  
+        indicando se o aluno foi aprovado (média >= 6) ou reprovado.  
+        Exemplifique e demonstre a saída!
+      </p>
+      <button id="btn6">Executar</button>
+      <div class="output" id="out6"></div>
+    </div>
+    
+    <!-- Questão 7 -->
+    <div class="card">
+      <h2>Questão 7</h2>
+      <p>
+        7 – Crie um programa que imprima na tela o nome, idade, curso e ano,  
+        um embaixo do outro. No HTML coloque um fundo e um título,  
+        e o JavaScript deve ser externo.
+      </p>
+      <button id="btn7">Executar</button>
+      <div class="output" id="out7"></div>
+    </div>
+    
+    <!-- Questão 8 -->
+    <div class="card">
+      <h2>Questão 8</h2>
+      <p>
+        8 – No texto “Tecnologia é um produto … resolução de problemas.”:  
+        (1) Busque a primeira posição de “em”  
+        (2) Busque a última posição de “ia”  
+        (3) Busque a palavra “ciência”  
+        (4) Busque a palavra “métodos”
+      </p>
+      <button id="btn8">Executar</button>
+      <div class="output" id="out8"></div>
+    </div>
+    
+    <!-- Questão 9 -->
+    <div class="card">
+      <h2>Questão 9</h2>
+      <p>
+        9 – Crie um programa que declare uma variável como string, depois converta  
+        para float e em seguida apresente o tipo da variável.
+      </p>
+      <button id="btn9">Executar</button>
+      <div class="output" id="out9"></div>
+    </div>
+  
+  </div>
+  
   <script src="./src/js/script.js"></script>
 </body>
 </html>
